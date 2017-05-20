@@ -3,11 +3,11 @@
 @import url("https://fonts.googleapis.com/css?family=Nova+Mono|Rancho");
 
 body {
-  margin: 0;
-  padding: 0;
-  background: url("../../images/seigaiha.png");
-  font-family: Arial;
-  font-size: 1.25em;
+  	margin: 0;
+  	padding: 0;
+  	background: url("../../images/seigaiha.png");
+  	font-family: Arial;
+  	font-size: 1.25em;
 }
 
 header {
@@ -178,25 +178,25 @@ footer {
 }
 
 @media screen and (max-width: 840px) {
-  .wrapper {
+ 	.wrapper {
 		width: 100%;
 		height: 47.5em;
-  }
+  	}
 
-  .calculator, .main {
+  	.calculator, .main {
 		position: relative;
-    	margin: auto;
-    	left: 0;
-    	top: 0;
-  }
+    		margin: auto;
+    		left: 0;
+    		top: 0;
+  	}
 
-  .main {
-    	width: 90%;
-  }
+  	.main {
+    		width: 90%;
+  	}
 
-  #explanation {
-    	padding: 0 1em;
-  }
+  	#explanation {
+    		padding: 0 1em;
+  	}
 }
 
 @media screen and (max-width: 736px) {
