@@ -1,0 +1,250 @@
+/* (c) 2017 Tina Anastopoulos - BMI Calculator */
+
+@import url("https://fonts.googleapis.com/css?family=Nova+Mono|Rancho");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../../images/seigaiha.png");
+  font-family: Arial;
+  font-size: 1.25em;
+}
+
+header {
+	width: 100%;
+	height: 1.5em;
+	margin: 2.5em 0 3em;
+	position: relative;
+	background: rgba(103, 188, 219, 0.2);
+}
+
+#homelink {
+	width: 5em;
+	position: absolute;
+	top: -4em;
+	left: 2em;
+	fill: #A2AB58;
+}
+
+#homelink:hover, #homelink:active {
+	fill: #E44424;
+	-webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.wrapper {
+	width: 42em;
+	height: 35em;
+	margin: auto;
+	position: relative;
+}
+
+.main {
+	width: 30em;
+	height: 32em;
+	position: absolute;
+	background: #FFFFFA;
+	border-radius: 15px;
+	border: 2px solid #005A31;
+	box-shadow: 7px 7px 5px #888;
+}
+
+.calculator {
+	width: 19em;
+	height: 21em;
+	position: absolute;
+	top: 6.875em;
+	left: 20em;
+	background: #A2AB58;
+	font-family: 'Nova Mono', monospace;
+	padding: 1.25em;
+	border-radius: 15px;
+	border: 2px solid #005A31;
+	box-shadow: 7px 7px 5px #888;
+}
+
+h1, h2 {
+	font-family: 'Rancho', cursive;
+	text-align: center;
+}
+
+h2 {
+	color: #FFFFFA;
+}
+
+#explanation {
+	padding: 0 13.5em 0 1.5em;
+	font-size: .8em;
+}
+
+#feet, #inches {
+	width: 4em;
+	height: 2em;
+	font-size: .8em;
+	background: #FFFFFA;
+	color: #005A31;
+	border: 2px solid #005A31;
+}
+
+#weight, #weight-metric, #height-metric {
+	width: 2.5em;
+	height: 1.5em;
+	font-size: .8em;
+	background: #FFFFFA;
+	color: #005A31;
+	text-align: right;
+	padding-right: .25em;
+	border-radius: 5px;
+	border: 2px solid #005A31;
+}
+
+.output {
+	width: 17.5em;
+	height: 1.5em;
+	margin-top: 2em;
+	background: #FFFFFA;
+	text-align: center;
+	line-height: .25em;
+	border-radius: inherit;
+	border: 2px solid #005A31;
+  	padding: .1em .5em .75em;
+}
+
+.button-wrap {
+	width: 12.6em;
+	margin: auto;
+	margin-top: 2em;
+}
+
+button {
+	width: 7.5em;
+	height: 2em;
+	background: #FFFFFA;
+	color: #005A31;
+	text-align: center;
+	font-family: 'Nova Mono', monospace;
+	font-size: inherit;
+	padding: 0;
+	border: 2px solid #005A31;
+	border-bottom: 0.25em solid #005A31;
+	border-radius: 10px;
+}
+
+button:active {
+	-webkit-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+#calculate {
+	color: #005A31;
+}
+
+#reset {
+	width: 4.5em;
+	color: #E44424;
+}
+
+#error {
+	font-size: .9em;
+	font-style: italic;
+	color: #E44424;
+}
+
+.selection {
+	text-align: center;
+	font-size: .8em;
+	padding: .25em;
+	cursor: pointer;
+}
+
+#metric {
+	display: none;
+}
+
+#stSel {
+	color: #005A31;
+}
+
+footer {
+	width: 100%;
+	height: 30px;
+	background: #000;
+	color: #FFFFFA;
+	font-size: .7em;
+	line-height: 2;
+	font-style: italic;
+	text-align: center;
+	margin: 3em 0 0;
+}
+
+@media screen and (max-width: 840px) {
+  .wrapper {
+		width: 100%;
+		height: 47.5em;
+  }
+
+  .calculator, .main {
+		position: relative;
+    	margin: auto;
+    	left: 0;
+    	top: 0;
+  }
+
+  .main {
+    	width: 90%;
+  }
+
+  #explanation {
+    	padding: 0 1em;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .wrapper {
+    	height: 52em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+	
+	.header {
+		margin: 1em 0 2em;
+	}
+	
+	.main {
+		background: none;
+  		border-radius: 0;
+  		border: none;
+  		box-shadow: none;
+	}
+	
+	.calculator {
+		width: 11em;
+		height: 25em;
+		box-shadow: none;
+	}
+	
+	#standard span, #standard p, #metric p {
+		font-size: 1.1em;
+	}
+	
+	.output {
+		width: 9.5em;
+		height: 1em;
+		padding: .1em 0 4em;
+		line-height: 1em;
+		margin: 1.25em .5em;
+	}
+
+	footer {
+		margin: 22em 0 0;
+	}
+	
+	#result {
+		line-height: 1.5em;
+	}
+	
+	button {
+		width: 6em;
+	}
+}
